@@ -1,0 +1,127 @@
+/* Overlay - dark transparent background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Modal Box - Dark Theme */
+.modal-box {
+  background: #111; /* Black background */
+  color: #fff; /* White text */
+  padding: 20px;
+  border-radius: 12px; /* Smooth corners */
+  min-width: 320px;
+  max-width: 500px;
+  z-index: 10000;
+  max-height: 90vh;
+  overflow-y: auto;
+
+  border: 1px solid rgba(0, 255, 100, 0.3);
+}
+
+/* Heading */
+.modal-box h3 {
+  margin: 0 0 15px;
+  color: #0f0; /* Green heading */
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Form Inputs & Selects */
+.modal-box input,
+.modal-box select,
+.modal-box textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 8px 10px;
+  border: 1px solid rgba(0, 255, 100, 0.4);
+  border-radius: 8px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.modal-box input:focus,
+.modal-box select:focus,
+.modal-box textarea:focus {
+  border-color: #0f0; /* Glow green on focus */
+}
+
+/* Toggle Buttons (Event / Task) */
+.toggle-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.toggle-buttons button {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 255, 100, 0.4);
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.toggle-buttons button.active {
+  background: #0f0;
+  color: #000;
+  border-color: #0f0;
+}
+
+.toggle-buttons button:hover {
+  border-color: #0f0;
+}
+
+/* Save & Cancel Buttons Row */
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Save (Green) Button */
+.modal-buttons .save {
+  background: #0f0;
+  color: #000;
+  padding: 8px 15px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.modal-buttons .save:hover {
+  background: #00cc00;
+}
+
+/* Cancel (Red) Button */
+.modal-buttons .cancel {
+  background: #e74c3c;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.modal-buttons .cancel:hover {
+  background: #c0392b;
+}
